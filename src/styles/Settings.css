@@ -1,0 +1,48 @@
+#settingsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.settings-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.settings-label {
+    align-self: flex-start;
+    margin-left: 10%;
+    font-weight: bold;
+    color: #333;
+}
+
+.settings-button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+}
+
+.settings-button:hover {
+    background-color: #666;
+}
+
+@media screen and (max-width: 600px) {
+    .settings-input, .settings-button {
+        width: 90%;
+    }
+
+    .settings-label {
+        margin-left: 5%;
+    }
+}
